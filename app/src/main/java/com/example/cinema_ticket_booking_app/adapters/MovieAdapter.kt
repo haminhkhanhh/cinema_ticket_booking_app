@@ -9,9 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cinema_ticket_booking_app.R
 import com.example.cinema_ticket_booking_app.models.Movie
 
-class MovieAdapter (var listMovie: List<Movie>): RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+class MovieAdapter(var listMovie: List<Movie>) :
+    RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
-    class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+    class MovieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgMovie: ImageView = itemView.findViewById(R.id.imgMovie)
         val txtMovieName: TextView = itemView.findViewById(R.id.txtMovieName)
     }
